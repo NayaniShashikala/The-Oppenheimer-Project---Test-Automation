@@ -8,13 +8,11 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 import static io.restassured.RestAssured.given;
 
-public class WorkingClassHeroes {
+public class WorkingClassHeroesTest {
 
 //    private String natId;
     RequestSpecification requestSpecification;
@@ -67,13 +65,4 @@ public class WorkingClassHeroes {
         Assert.assertEquals(response.extract().body().jsonPath().get("[0].name"),"bonny bennet");
 //        Assert.assertEquals(response.extract().asString(), "Alright");
     }
-
-
-
-
-
-
-
-
-
 }
