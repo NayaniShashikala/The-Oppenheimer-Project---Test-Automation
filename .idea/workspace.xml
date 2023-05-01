@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b9f916-00b7-4048-90eb-51617cfb2c81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/helper/TaxCalculation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TaxRelieveTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/AddPersons.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WorkingClassHeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorkingClassHeroesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WorkingClassHeroesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorkingClassHeroesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.TaxRelieveTest.checkNormalRoudingTest (1)">
+  <component name="RunManager" selected="TestNG.WorkingClassHeroesTest.addMultipleWorkingClassHeroes">
     <configuration name="TaxRelieveTest.checkComputationOfTaxReliefTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="oppenheimer-project-test-automation" />
       <option name="PACKAGE_NAME" value="" />
@@ -64,18 +60,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TaxRelieveTest" />
       <option name="METHOD_NAME" value="checkComputationOfTaxReliefTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaxRelieveTest.checkLessThanFiftyRule" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="oppenheimer-project-test-automation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaxRelieveTest" />
-      <option name="METHOD_NAME" value="checkLessThanFiftyRule" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,13 +91,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WorkingClassHeroesTest.addMultipleWorkingClassHeroes" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="oppenheimer-project-test-automation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WorkingClassHeroesTest" />
+      <option name="METHOD_NAME" value="addMultipleWorkingClassHeroes" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WorkingClassHeroesTest.addMultipleWorkingClassHeroes" />
         <item itemvalue="TestNG.TaxRelieveTest.checkNormalRoudingTest (1)" />
         <item itemvalue="TestNG.TaxRelieveTest.checkNormalRoudingTest" />
         <item itemvalue="TestNG.TaxRelieveTest.checkComputationOfTaxReliefTest (1)" />
         <item itemvalue="TestNG.TaxRelieveTest.checkComputationOfTaxReliefTest" />
-        <item itemvalue="TestNG.TaxRelieveTest.checkLessThanFiftyRule" />
       </list>
     </recent_temporary>
   </component>

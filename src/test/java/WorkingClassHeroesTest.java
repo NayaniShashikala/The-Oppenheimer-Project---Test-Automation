@@ -62,7 +62,7 @@ public class WorkingClassHeroesTest {
         String responseBody = response.extract().body().jsonPath().toString();
         System.out.println(responseBody);
         Assert.assertEquals(response.extract().statusCode(), 202);
-        Assert.assertEquals(response.extract().body().jsonPath().get("[0].name"),"bonny bennet");
-//        Assert.assertEquals(response.extract().asString(), "Alright");
+        Assert.assertEquals(response.extract().body().jsonPath().get("[0].name"),"bonny bennet"); // this will fail as there are no response to track this.
+        Assert.assertEquals(response.extract().asString(), "Alright");
     }
 }
