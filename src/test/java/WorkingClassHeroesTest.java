@@ -28,14 +28,16 @@ public class WorkingClassHeroesTest {
     }
 
     @Test (description = "Verify that a clerk should be able to insert a single employee to the system")
-    public void addSingleWorkingClassHero(){
+    public void addingValidSingleWorkingClassHero(){
         Random random = new Random();
+
         String birthday = "12051969";
         String gender = "F";
         String name = "henver deker";
         String natid = String.format("%03d",random.nextInt(1000))+"-"+String.format("%07d", random.nextInt(100000));
         String salary = "30000";
         String tax="1000";
+
         InsertSinglePerson insertSinglePerson = new InsertSinglePerson(birthday,gender,name, natid,salary, tax);
         insertSinglePerson.setRequestModel();
         ValidatableResponse response = given()
@@ -47,6 +49,28 @@ public class WorkingClassHeroesTest {
         System.out.println(responseBody);
         Assert.assertEquals(response.extract().statusCode(), 202);
         Assert.assertEquals(response.extract().asString(), "Alright");
+    }
+
+    @Test (description = "Verify that a clerk cannot insert a single employee to the system when the data type is incorrect.")
+    public void addingInvalidSingleWorkingClassHero() {
+
+        Random random = new Random();
+        String birthday = "12-05-1969";
+        String gender = "F";
+        String name = "henver deker";
+        String natid = String.format("%03d",random.nextInt(1000))+"-"+String.format("%07d", random.nextInt(100000));
+        String salary = "30000";
+        String tax="1000";
+
+
+        InsertSinglePerson insertSinglePerson = new InsertSinglePerson(birthday,gender,name, natid,salary, tax);
+        insertSinglePerson.setRequestModel();
+        ValidatableResponse response = given()
+                .spec(requestSpecification)
+                .body(insertSinglePerson.getRequestModel().toString()).log().all()
+                .post("calculator/insert")
+                .then().log().all();
+        Assert.assertEquals(response.extract().body().jsonPath().get("message"),"Text '" + birthday + "' could not be parsed at index 2");
     }
 
     @Test(description = "Verify that a clerk should be able to insert multiple employees to the system")

@@ -36,7 +36,7 @@ public class TaxRelieveTest {
         Assert.assertEquals(response.extract().asString(), "Successfully inserted "+count);
     }
 
-    @Test(description = "Verify that Bookkeeper can see the tax relief list ") //can add if we want ->(dependsOnMethods = "addListCountSizeTest")
+    @Test(description = "Verify that Bookkeeper can see the tax relief list ") //can add if we want ->(dependsOnMethods = "setListSizeTest")
     public void getAllTaxReliefListTest() {
         ValidatableResponse response = given()
                 .spec(requestSpecification)
@@ -208,6 +208,4 @@ public class TaxRelieveTest {
         Assert.assertEquals(response.extract().body().jsonPath().get("totalWorkingClassHeroes"), totalNo);
         Assert.assertEquals(response.extract().body().jsonPath().get("totalTaxReliefAmount"), totalAmount);
     }
-
-
 }
