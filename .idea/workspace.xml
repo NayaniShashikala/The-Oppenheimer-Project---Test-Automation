@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d4b9f916-00b7-4048-90eb-51617cfb2c81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/TaxRelieveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/TaxRelieveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/UploadCSVFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/UploadCSVFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/WorkingClassHeroesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/WorkingClassHeroesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +34,26 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/NAYANI/Documents/msp-automation&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.WorkingClassHeroesTest.addMultipleWorkingClassHeroes">
-    <configuration name="TaxRelieveTest.CheckNatIdMaskingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TaxReliefTableTest.CheckCountOFToBeDispensedWorkingClassHeroTest">
+    <configuration name="TaxReliefTableTest.CheckCountOFToBeDispensedWorkingClassHeroTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="oppenheimer-project-test-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ui.oppenheimerqaassignment.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ui.oppenheimerqaassignment.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.ui.oppenheimerqaassignment.tests.TaxReliefTableTest" />
+      <option name="METHOD_NAME" value="CheckCountOFToBeDispensedWorkingClassHeroTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaxRelieveTest.checkComputationOfTaxReliefTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="oppenheimer-project-test-automation" />
       <extension name="coverage">
         <pattern>
@@ -43,7 +63,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="apiTests" />
       <option name="MAIN_CLASS_NAME" value="apiTests.TaxRelieveTest" />
-      <option name="METHOD_NAME" value="CheckNatIdMaskingTest" />
+      <option name="METHOD_NAME" value="checkComputationOfTaxReliefTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -51,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaxRelieveTest.getAllTaxReliefListTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TaxRelieveTest.checkLessThanFiftyRule" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="oppenheimer-project-test-automation" />
       <extension name="coverage">
         <pattern>
@@ -61,7 +81,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="apiTests" />
       <option name="MAIN_CLASS_NAME" value="apiTests.TaxRelieveTest" />
-      <option name="METHOD_NAME" value="getAllTaxReliefListTest" />
+      <option name="METHOD_NAME" value="checkLessThanFiftyRule" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -69,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaxRelieveTest.setListSizeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TaxRelieveTest.checkNormalRoudingTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="oppenheimer-project-test-automation" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +99,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="apiTests" />
       <option name="MAIN_CLASS_NAME" value="apiTests.TaxRelieveTest" />
-      <option name="METHOD_NAME" value="setListSizeTest" />
+      <option name="METHOD_NAME" value="checkNormalRoudingTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -87,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkingClassHeroesTest.addMultipleWorkingClassHeroes" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TaxRelieveTest.getTaxReliefSummary" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="oppenheimer-project-test-automation" />
       <extension name="coverage">
         <pattern>
@@ -96,26 +116,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="apiTests" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.WorkingClassHeroesTest" />
-      <option name="METHOD_NAME" value="addMultipleWorkingClassHeroes" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WorkingClassHeroesTest.addingValidSingleWorkingClassHero" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="oppenheimer-project-test-automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="apiTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="apiTests" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.WorkingClassHeroesTest" />
-      <option name="METHOD_NAME" value="addingValidSingleWorkingClassHero" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.TaxRelieveTest" />
+      <option name="METHOD_NAME" value="getTaxReliefSummary" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -125,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WorkingClassHeroesTest.addMultipleWorkingClassHeroes" />
-        <item itemvalue="TestNG.WorkingClassHeroesTest.addingValidSingleWorkingClassHero" />
-        <item itemvalue="TestNG.TaxRelieveTest.CheckNatIdMaskingTest" />
-        <item itemvalue="TestNG.TaxRelieveTest.getAllTaxReliefListTest" />
-        <item itemvalue="TestNG.TaxRelieveTest.setListSizeTest" />
+        <item itemvalue="TestNG.TaxReliefTableTest.CheckCountOFToBeDispensedWorkingClassHeroTest" />
+        <item itemvalue="TestNG.TaxRelieveTest.getTaxReliefSummary" />
+        <item itemvalue="TestNG.TaxRelieveTest.checkLessThanFiftyRule" />
+        <item itemvalue="TestNG.TaxRelieveTest.checkNormalRoudingTest" />
+        <item itemvalue="TestNG.TaxRelieveTest.checkComputationOfTaxReliefTest" />
       </list>
     </recent_temporary>
   </component>

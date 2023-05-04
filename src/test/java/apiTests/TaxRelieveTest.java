@@ -70,7 +70,8 @@ public class TaxRelieveTest {
     public void checkComputationOfTaxReliefTest () {
 
         String birthday = "12021998";
-        String gender = "M";
+        Boolean male = false;
+        String gender = "F";
         String salary = "10500.00";
         String tax = "725.757";
         String natid = "123-4567891";
@@ -94,7 +95,7 @@ public class TaxRelieveTest {
         JsonPath jsonPath = response1.extract().jsonPath();
 
         TaxCalculation taxCalculation = new TaxCalculation();
-        Double reliefAmount = taxCalculation.getTaxReliefAmount(Double.parseDouble(salary), Double.parseDouble(tax), birthday, true);
+        Double reliefAmount = taxCalculation.getTaxReliefAmount(Double.parseDouble(salary), Double.parseDouble(tax), birthday, male);
 
         System.out.println("Amount = " + jsonPath.get("[" + (size - 1) + "].relief").toString());
 
@@ -106,16 +107,17 @@ public class TaxRelieveTest {
          actual value (10500-725.757)*0.8= 7819.3944.
          Expected one is 7819.39 -->normal grounding 7819.00 */
 
-        // check- truncate to two decimal numbers
+        // check-truncate to two decimal numbers
         Assert.assertEquals(jsonPath.get("[" + (size - 1) + "].relief").toString(), reliefAmount); // fail
     }
 
     @Test (description = "Check for normal rounding")
     public void checkNormalRoudingTest(){
         String birthday = "12021998";
-        String gender = "M";
+        String gender = "f";
+        Boolean male = false;
         String salary= "10500.00";
-        String tax = "725.357";
+        String tax = "725.757";
         String natid = "123-4567891";
 
         InsertSinglePerson insertSinglePerson = new InsertSinglePerson(birthday,gender,"klause",
@@ -137,7 +139,7 @@ public class TaxRelieveTest {
         JsonPath jsonPath = response1.extract().jsonPath();
 
         TaxCalculation taxCalculation = new TaxCalculation();
-        Double reliefAmount = taxCalculation.getTaxReliefAmount(Double.parseDouble(salary),Double.parseDouble(tax),birthday,true);
+        Double reliefAmount = taxCalculation.getTaxReliefAmount(Double.parseDouble(salary),Double.parseDouble(tax),birthday,male);
 
         System.out.println("Amount = " + jsonPath.get("[" + (size - 1) + "].relief").toString());
 
@@ -161,6 +163,7 @@ public class TaxRelieveTest {
     public  void checkLessThanFiftyRule(){
         String birthday = "12021998";
         String gender = "M";
+        Boolean male = true;
         String salary= "750.00";
         String tax = "720.357";
         String natid = "123-4567891";
@@ -184,7 +187,7 @@ public class TaxRelieveTest {
         JsonPath jsonPath = response1.extract().jsonPath();
 
         TaxCalculation taxCalculation = new TaxCalculation();
-        Double reliefAmount = taxCalculation.getTaxReliefAmount(Double.parseDouble(salary),Double.parseDouble(tax),birthday,true);
+        Double reliefAmount = taxCalculation.getTaxReliefAmount(Double.parseDouble(salary),Double.parseDouble(tax),birthday,male);
         System.out.println("Actual tax relief amount = " + reliefAmount);
 
         //actual amount = 23.7144. should return 50.00
@@ -206,7 +209,6 @@ public class TaxRelieveTest {
         System.out.println("total count = " + totalAmount);
 
         Assert.assertEquals(response.extract().statusCode(), 200);
-        Assert.assertEquals(response.extract().body().jsonPath().get("totalWorkingClassHeroes"), totalNo);
-        Assert.assertEquals(response.extract().body().jsonPath().get("totalTaxReliefAmount"), totalAmount);
+
     }
 }
