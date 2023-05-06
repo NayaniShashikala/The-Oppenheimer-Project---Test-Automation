@@ -28,25 +28,9 @@ The following user stories have been implemented in the Oppenheimer Project:
 ## Testing Strategy
 The testing strategy for this system includes:
 
-- Testing for functional requirements: Both UI and API testing to ensure that each feature works as expected.
+- Testing for functional requirements: Both UI and API testing to ensure that each feature works as expected. The POISED strategy has been used to do the API testing.
 - Testing for non-functional requirements: UI testing to ensure that the system is user-friendly and meets performance and security standards.
 - Test cases: several test cases have been covered to verify correctness and quality.
-
-## Error Handling
-During testing, the following errors were identified:
-
-* 202 response error: A 202 response status code indicates that the request has been accepted for processing, but the processing has not been completed yet. But still shows 202 status code, even data is scussfully showed in the system.
-* Gender input error: the gender field only accepts valid characters but need to have proper instructions when inserting data.
-* Count update of the tax Relief summary:
-- End Point: calculator/insertRandomToDatabaseForNoReason?count=100. Each time when the user insert the count, summary list count gets increased by 100.
-File upload error: No success message on the UI to confirm that the file has been uploaded correctly.
-* No Response body to track the data for these endpoints.
-- calculator/insertMultiple
-- calculator/insert
-
-## Covered Test cases
-- 10 UI Test cases
-- 10 API Test cases 
 
 ## Conclusion
 The Oppenheimer Project is a successful system designed to support the taxation relief initiative for working class heroes in the City of Carson. It provides clerks with an easy way to populate a list of working class heroes, bookkeepers with an efficient way to retrieve the payable taxation relief for each working class hero, and the governor with a simple way to dispense money to each working class hero at her discretion. With its user-friendly interface, reliable performance, and robust error handling, the Oppenheimer Project is sure to be a valuable tool for the City of Carson for years to come.
